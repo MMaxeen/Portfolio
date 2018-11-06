@@ -6,7 +6,7 @@ body{
     background-color: white;
     font-family: 'Josefin Sans';
     height: 500vh;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .cursor {
