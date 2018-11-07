@@ -41,11 +41,12 @@ window.addEventListener("scroll", function(event){
 });
 
 var burger = document.querySelector('.menu'); 
-var nav = document.querySelector("header");
+var nav = document.querySelector("nav");
 burger.addEventListener("click", function(e) {
     nav.classList.toggle("visible");
   });
 
+  
 // var menu = document.querySelector('.menu');
 burger.addEventListener("click", function(e) {
   burger.classList.toggle("active");
@@ -53,8 +54,8 @@ burger.addEventListener("click", function(e) {
 
 
 
-var NUM_PARTICLES = ( ( ROWS = 300 ) * ( COLS = 500 ) ),
-    THICKNESS = Math.pow( 120, 2 ),
+var NUM_PARTICLES = ( ( ROWS = 200 ) * ( COLS = 400 ) ),
+    THICKNESS = Math.pow( 80, 2 ),
     SPACING = 3,
     MARGIN = 20,
     COLOR = 200,
@@ -69,7 +70,7 @@ var NUM_PARTICLES = ( ( ROWS = 300 ) * ( COLS = 500 ) ),
     C = -4 / Math.pow( Math.PI, 2 ),
     P = 0.225,
 
-    */
+    */ 
 
     container,
     particle,
