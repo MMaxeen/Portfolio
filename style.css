@@ -29,16 +29,32 @@ h1{
     top: 0;
     left: 0;
     z-index: 2;
+    
 }
 
-.canvas{
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
     width: 100%;
     height: 100%;
+    /* background-color: #000; */
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    cursor: none;
+  }
+  
+
+/* .canvas{
+    width: 100%;
+    height: 40%;
     position: absolute;
     left: 0;
     top: 0;
     cursor: none;
-}
+} */
 
 
 ::selection{
@@ -116,9 +132,13 @@ h1{
     position: absolute;
     left: 10%;
     top: 20%;
-    color: rgba(250, 250, 250, 0.6);
+    color: black;
+    transition: color 800ms;
 }
 
+.prez.testcolor{
+    color: rgba(220, 220, 220, 0.5);
+}
 .prez p{
     line-height: 1.5rem;
 }
@@ -166,9 +186,8 @@ h1{
 nav{
     background-color: white;
     height: 90vh;
-    min-width: 25vw;
     font-size: 2em;
-    transform: translateY(-90vh);
+    transform: translateY(-100vh);
     transition: transform 600ms ease-out;
     display: flex;
     flex-direction: column;
@@ -178,7 +197,7 @@ nav{
 }
 
 nav.visible{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .home, .about, .projects{
